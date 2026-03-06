@@ -1,7 +1,6 @@
 section .data
     ALAS: DD 10
     TINGGI: DD 5
-    LUAS: DD 0
     
 section .text
     MOV EAX, [ALAS]
@@ -17,4 +16,4 @@ recurse:
     JMP recurse
     
 end:
-    MOV [LUAS], EAX
+    INT 1
