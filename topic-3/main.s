@@ -1,7 +1,7 @@
 section .data
     PANJANG: DD 10
     LEBAR: DD 5
-    LUAS: DD 0
+    NEWLINE: DB 10, 0
     
 section .text
     MOV EAX, [PANJANG]
@@ -17,4 +17,6 @@ recurse:
     JMP recurse
     
 end:
-    MOV [LUAS], EAX
+    INT 1
+    MOV EAX, NEWLINE
+    INT 2
