@@ -1,5 +1,5 @@
 section .data
-    DETIK: DD 82823
+    DETIK: DD 82823        ; Ubah sesuaikan dengan Input [Detik]
     COLON: DB ':', 0
     NEWLINE: DB 10, 0
 
